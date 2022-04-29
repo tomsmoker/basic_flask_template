@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        {% if title %}
+        <title> {{ title }} </title>
+        {% else %}
+        <title> blank home page </title>
+        {% endif %}
+        <link rel="stylesheet" href="{{ url_for('static', filename="styles/style.css") }}">
+    </head>
+    <body>
+
+        <h1> welcome to my page, {{ user.username }} </h1>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>
+
+    

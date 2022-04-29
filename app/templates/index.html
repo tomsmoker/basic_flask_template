@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for quote in quotes %}
+    <div>
+        <p> <strong> {{ quote.text }} </strong> - {{ quote.author.username }} </p>
+    </div>
+    {% endfor %}
+{% endblock %}

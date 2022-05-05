@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+    <h2> quotes that resonate at my preferred vibfreq (vibe frequency) </h2>
     {% for quote in quotes %}
     <div>
         <p> <strong> {{ quote.text }} </strong> - {{ quote.author.username }} </p>

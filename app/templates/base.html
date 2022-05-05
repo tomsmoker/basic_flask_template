@@ -11,7 +11,24 @@
     </head>
     <body>
 
-        <h1> welcome to my page, {{ user.username }} </h1>
+        <div>
+            tommy's place: 
+            <a href="{{ url_for('index') }}">basecamp</a>
+            <a href="{{ url_for('login') }}">login</a>
+        </div>
+
+        <h1> welcome to the page of all time </h1>
+
+        <!-- {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %} 
+        <hr> -->
 
         {% block content %}
         {% endblock %}

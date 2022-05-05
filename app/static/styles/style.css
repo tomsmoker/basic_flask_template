@@ -1,8 +1,16 @@
+body{
+    background-color: #ebe8e1;
+}
+
 h1 {
     color: #0FFA34;
     text-align: center;
-    padding-bottom: 5%;
     font-size: 60px;
+}
+
+h2 {
+    color: purple;
+    text-align: center;
 }
 
 p {
